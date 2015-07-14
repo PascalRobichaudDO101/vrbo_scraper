@@ -1,10 +1,13 @@
 import scraperwiki
 from pyquery import PyQuery
 
-url = 'http://www.vrbo.com/373926'
+ROOT = 'https://fairemtl.ca'
+dom = PyQuery('%s/fr/projets' % ROOT)
 
-q = PyQuery(url)
+#url = 'http://www.vrbo.com/373926'
 
-print q('.ratesdetails').text()
+#q = PyQuery(url)
+
+#print q('.ratesdetails').text()
 
 
